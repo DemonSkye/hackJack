@@ -8,6 +8,8 @@ public class WinConditions {
             return false;
         }
     }
+
+    //Todo: Make blackjack trump 5 card monty.
     public static boolean automaticWin(Player p, Deck myDeck){
         int cardsInHandPlayer = 0;
         for(int i=0; i<p.hand.length; i++) {

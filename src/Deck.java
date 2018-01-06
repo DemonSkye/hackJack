@@ -2,6 +2,7 @@ import java.util.Random;
 
 import static java.lang.Math.abs;
 
+//A deck of 52 cards
 public class Deck {
     //Suit 1: Hearts
     //Suit 2: Diamonds
@@ -10,6 +11,7 @@ public class Deck {
     public Card[] cards;
     public int usedCards[];
 
+    //Todo: Change name to better explain this removes all "used" flags from cards.
     public void shuffle(){
         //shuffle cards back into Deck
         for(int i = 0; i<52; i++){
@@ -17,6 +19,7 @@ public class Deck {
         }
     }
 
+    //Todo: remove unused
     public String getSuit(int x){
         switch(x){
             case 0: return "Hearts";
@@ -154,9 +157,4 @@ public class Deck {
             usedCards[i]=0;
         }
     }
-
-
-
-
-
 }

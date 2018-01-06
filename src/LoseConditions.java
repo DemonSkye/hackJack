@@ -3,7 +3,6 @@ public class LoseConditions {
         if(x.getTotalValue(myDeck) > 21){
             return true;
         }
-
         return false;
     }
 }

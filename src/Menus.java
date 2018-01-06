@@ -40,6 +40,8 @@ public class Menus {
         return choice;
     }
 
+    //Todo: Show computer player's hand when they win / lose.
+    //Todo: Fix "You win" being displayed more than once.
     public static int hitOrStand(Player human, Player computer, Deck myDeck) {
         System.out.println("The dealer is showing: " + computer.hand[0].name + " of " + computer.hand[0].suit);
         int choice = 0;
